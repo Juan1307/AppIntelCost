@@ -21,7 +21,8 @@
       <h1>Bienes Intelcost</h1>
     </div>
     <div class="colFiltros">
-      <form action="#" method="post" id="formulario">
+      <!-- modulo de filtros -->
+      <form method="post" action="" id="formulario">
         <div class="filtrosContenido">
           <div class="tituloFiltros">
             <h5>Filtros</h5>
@@ -29,41 +30,45 @@
           <div class="filtroCiudad input-field">
             <p><label for="selectCiudad">Ciudad:</label><br></p>
             <select name="ciudad" id="selectCiudad">
-              <option value="" selected>Elige una ciudad</option>
+              <option value selected>Elige una ciudad</option>
             </select>
           </div>
           <div class="filtroTipo input-field">
             <p><label for="selecTipo">Tipo:</label></p>
             <br>
             <select name="tipo" id="selectTipo">
-              <option value="">Elige un tipo</option>
+              <option value selected>Elige un tipo</option>
             </select>
           </div>
           <div class="filtroPrecio">
             <label for="rangoPrecio">Precio:</label>
-            <input type="text" id="rangoPrecio" name="precio" value="" />
+            <input type="text" id="rangoPrecio" name="precio" value=""/>
           </div>
           <div class="botonField">
             <input type="submit" class="btn white" value="Buscar" id="submitButton">
-          </div>
+            </div>
         </div>
       </form>
+
     </div>
     <div id="tabs" style="width: 75%;">
       <ul>
         <li><a href="#tabs-1">Bienes disponibles</a></li>
         <li><a href="#tabs-2">Mis bienes</a></li>
+        <li><a href="#tabs-3">Mi Reporte</a></li>
       </ul>
+
       <div id="tabs-1">
         <div class="colContenido" id="divResultadosBusqueda">
           <div class="tituloContenido card" style="justify-content: center;">
             <h5>Resultados de la búsqueda:</h5>
             <div class="divider"></div>
+            <section id="areaBusqueda"></section>
           </div>
         </div>
       </div>
-      
-      <div id="tabs-2" >
+
+      <div id="tabs-2">
         <div class="colContenido" id="divResultadosBusqueda">
           <div class="tituloContenido card" style="justify-content: center;">
             <h5>Bienes guardados:</h5>
@@ -71,20 +76,26 @@
           </div>
         </div>
       </div>
-    </div>
 
+      <div id="tabs-3">
+        <div class="colContenido" id="divGenerarReporte">
+          <div class="tituloContenido card" style="justify-content: center;">
+            <h5>Mi reporte:</h5>
+            <div class="divider"></div>
+          </div>
+        </div>
+      </div>
 
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    
     <script type="text/javascript" src="js/ion.rangeSlider.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript" src="js/buscador.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script type="text/javascript">
       $( document ).ready(function() {
           $( "#tabs" ).tabs();
       });
     </script>
+    <script type="module" src="js/buscador.js"></script>
   </body>
   </html>
