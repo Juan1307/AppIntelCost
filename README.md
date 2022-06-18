@@ -9,7 +9,7 @@ Esta es una app de IntelCost que comtempla funciones como.
 
 Esta aplicación fue contstruida bajo:
 
-1. XAMPP
+1. XAMPP v3.3.0 - PhpMyAdmin 5.1.1.
 1. Php 8.
 1. Mysql.
 1. Jquery.
@@ -23,7 +23,7 @@ Tener en cuenta los requisitos previamente mencionados para la ejecución.
 ```
     git clone  https://github.com/Juan1307/AppIntelCost.git  php-suplos
 ```
-    Tener en cuenta que debe ser un entorno en donde se pueda ejecutar php
+Tener en cuenta que debe ser un entorno en donde se pueda ejecutar php.
 
 - Segundo: Ir a la carpeta ```/php-suplos``` y ejecutar el siguiente comando.
 ```
@@ -38,4 +38,4 @@ Tener en cuenta los requisitos previamente mencionados para la ejecución.
 
 - Recuerda iniciar las funciones de **Apache** y **Mysql** en el panel de XAMPP.
 
-Esta app se base en la platilla de SuplosBackenf [++REF-PLANTILLA++](https://github.com/nboadam/suplosBackEnd).
+Esta app se base en la plantilla de SuplosBackend [++REF-PLANTILLA++](https://github.com/nboadam/suplosBackEnd).

@@ -25,7 +25,8 @@ import { renderOptionsTag, useFetchApi } from './modules/ViewUtils.js';
     
     const response = await fetch('php/controller/AjaxUsuarios.php');
     const [ user_1, ] = await response.json();
-    window.currentUser = user_1; // global scope
+    window.currentUser = user_1; // global scope 
+    //obtiene el primer usuario 
 
   })();
 
