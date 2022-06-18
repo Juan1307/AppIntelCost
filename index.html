@@ -22,7 +22,7 @@
     </div>
     <div class="colFiltros">
       <!-- modulo de filtros -->
-      <form method="post" action="" id="formulario">
+      <form id="formulario">
         <div class="filtrosContenido">
           <div class="tituloFiltros">
             <h5>Filtros</h5>
@@ -54,7 +54,7 @@
     <div id="tabs" style="width: 75%;">
       <ul>
         <li><a href="#tabs-1">Bienes disponibles</a></li>
-        <li><a href="#tabs-2">Mis bienes</a></li>
+        <li id="bienesGuardados"><a href="#tabs-2">Mis bienes</a></li>
         <li><a href="#tabs-3">Mi Reporte</a></li>
       </ul>
 
@@ -73,6 +73,7 @@
           <div class="tituloContenido card" style="justify-content: center;">
             <h5>Bienes guardados:</h5>
             <div class="divider"></div>
+            <section id="areaGuardados"></section>
           </div>
         </div>
       </div>
@@ -82,6 +83,24 @@
           <div class="tituloContenido card" style="justify-content: center;">
             <h5>Mi reporte:</h5>
             <div class="divider"></div>
+            <a id="reporteEnlace" target="_blank" style="display: none;"></a>
+            <form id="formReporte">
+              <div class="filtroCiudad input-field">
+                <p><label for="reporteCiudad">Ciudad</label><br></p>
+                <select name="repciudad" id="reporteCiudad">
+                  <option value selected>Elige una ciudad</option>
+                </select>
+              </div>
+              <div class="filtroTipo input-field">
+                <p><label for="reporteTipo">Tipo:</label><br></p>
+                <br>
+                <select name="reptipo" id="reporteTipo">
+                  <option value selected>Elige un tipo</option>
+                </select>
+              </div>
+
+              <button type="submit" class="waves-effect waves-light btn">Generar reporte</button>
+            </form>
           </div>
         </div>
       </div>
@@ -96,6 +115,6 @@
           $( "#tabs" ).tabs();
       });
     </script>
-    <script type="module" src="js/buscador.js"></script>
+    <script type="module" src="js/InitModule.js"></script>
   </body>
   </html>
